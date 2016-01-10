@@ -8,8 +8,7 @@ Given(/^that we have Arya, Sansa, Petyr, and The Hound$/) do
 end
 
 Given(/^Arya and Sansa are sisters$/) do
-  pending
-  @arya.sisters << @sansa
+  @arya.add_sister(@sansa)
 
   # guard assertion: two-way relationship
   expect(@arya.sisters).to include @sansa
