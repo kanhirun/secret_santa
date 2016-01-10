@@ -1,10 +1,11 @@
 require 'lib/person'
 
-describe Person do
-  it 'knows about first name' do
-    person = Person.new(first_name: 'Arya')
 
-    expect(person.first_name).to eq 'Arya'
+describe Person, '#new' do
+  it 'knows about first name' do
+    subject = Person.new(first_name: 'Arya')
+
+    expect(subject.first_name).to eq 'Arya'
   end
 
   it 'must have a first name' do
