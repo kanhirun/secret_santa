@@ -1,7 +1,6 @@
 # TODO: Rewrite as an end-to-end test
 
 Given(/^that we have Arya, Sansa, Petyr, and The Hound$/) do
-  pending
   arya  = Person.new(first_name: 'Arya')
   sansa = Person.new(first_name: 'Sansa')
   petyr = Person.new(first_name: 'Petyr')
